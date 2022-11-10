@@ -8,7 +8,7 @@ function onFormSubmit(){
     else
     updateRecord(formData);
     }
-    // resetForm();
+    resetForm();
 }
 
  //document.getElementById("btnSubmit").addEventListener("click", function(event){

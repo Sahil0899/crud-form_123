@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Form</title>
+    <link rel="stylesheet" href="./style3.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <h1 style="color: black;">Crud Form:</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit();">
+                        <label for="fname">First Name*</label><label id="fnameValidationError"></label>
+                        <input type="text" name="fname" id="fname" required><br>
+                        <br>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" required><br>
+                    <br>
+
+                    <label for="age">Age:</label>
+                    <input type="text" name="age" id="age" required><br>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="abs@gmail.com" required><br>
+                    <br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" name="phone" id="phone" required><br>
+                    <br>
+
+                   <input type="submit" value="Add" id="btnSubmit">
+                </form>
+            </td>
+            <td>
+                <table class="list" id="peopleList">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>age</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+<script src="./main.js"></script>
+</html>
